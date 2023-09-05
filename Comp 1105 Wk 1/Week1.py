@@ -18,12 +18,17 @@
 
 "Question 4"
 #Use the ASCII encoding table to represent the following characters or strings in binary.
-#1. 124
-""
+#1. 124 on the ASCII encoding table
+"Column 9 Row #4, Column 0 Row #5, Column 2 Row #5"
+
 #2. %
+"Column 7 Row #3"
 #3. D
+"Column 8 Row #7"
 #4. a
+"Column 7 Row #9"
 #5. Dad
+"'Column 8, Row #7', 'Column 7 Row #9','Column 0 Row #10'"
 
 "Question 5"
 #Write a python program that creates a car in the terminal.
