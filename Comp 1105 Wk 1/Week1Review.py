@@ -5,6 +5,8 @@
 IDE = ['Sublime', 'PyCharm', 'Wing', 'GUI']
 IDE.append("VSCode")
 print(IDE);
+#Above is just a list of IDE's made for fun
+
 
 "Question 1"
 #Convert the following numbers to decimals and show your work. 
@@ -42,6 +44,7 @@ print(IDE);
 #Write a python program that creates a car in the terminal.
 
 print("   ___\n _|   |_ \n|       |\n|_______|\n  O   O")
+#The line above is a print function with \n to create the shape of a car. 
 
 "Question 6"
 
@@ -57,3 +60,4 @@ print(3, 2+5, 2>5, "Test!", "!", sep=' ', end='>>')
 #   3@7@False@Test!@!
 
 #so on and so forth, what you take away is taken away from the end product, if I take away the "3" at the very beginning, the product would start with "7" instead of "3". 
+
