@@ -23,10 +23,13 @@
 
 #2. %
 "Column 7 Row #3"
+
 #3. D
 "Column 8 Row #7"
+
 #4. a
 "Column 7 Row #9"
+
 #5. Dad
 "'Column 8, Row #7', 'Column 7 Row #9','Column 0 Row #10'"
 
