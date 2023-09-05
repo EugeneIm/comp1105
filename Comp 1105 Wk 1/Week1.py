@@ -2,11 +2,15 @@
 #1 kb(kilobyte) is 1024 bytes
 #1 MB is 1,048,576 bytes
 #1 GB is 1,073,741,824 bytes
+IDE = ['Sublime', 'PyCharm', 'Wing', 'GUI']
+IDE.append("VSCode")
 
 "Question 1"
 #Convert the following numbers to decimals and show your work. 
 #1. 1101(2)
+
 #2. 10101010(2)
+
 "Question 2"
 #Conver the decimals numbers 457 and 988 to the binary. You are supposed to use the algorithm for converting decimal to binary.
 
