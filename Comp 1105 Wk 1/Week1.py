@@ -4,6 +4,7 @@
 #1 GB is 1,073,741,824 bytes
 IDE = ['Sublime', 'PyCharm', 'Wing', 'GUI']
 IDE.append("VSCode")
+print(IDE);
 
 "Question 1"
 #Convert the following numbers to decimals and show your work. 
