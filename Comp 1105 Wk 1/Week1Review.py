@@ -88,10 +88,10 @@ print(3, 2+5, 2>5, "Test!", "!", sep=' ', end='>>')
 #as long as the "2+5" and "2>5" are separated by commas, the interpreter will consider them to be statments and give you the answers whether it is false, like the "2>5", and "7" from the "2+5". 
 #   3@7@False@Test!@!>> is the result of the print statement above. 
 
-#if I were to do sep=" ", the print would show as
+#if I were to sep="@" to sep=" ", the print would show as
 #   3 7 False Test! !>>
 
-#take away the "end='>>'"
+#take away only the "end='>>'"
 #   3@7@False@Test!@!
 
 #so on and so forth, what you take away is taken away from the end product, if I take away the "3" at the very beginning, the product would start with "7" instead of "3". 
