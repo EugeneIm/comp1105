@@ -10,18 +10,52 @@ print(IDE);
 
 "Question 1"
 #Convert the following numbers to decimals and show your work. 
+#Binary column values (2^6)(2^5)(2^4)(2^3)(2^2)(2^0)
 #1. 1101(2)
-
+'''
+1's are positioned at the ^0, ^2, ^3 = 1 + 4 + 8
+8+4+0+1 = 13
+'''
 #2. 10101010(2)
+'''
+1's are positioned at the ^1, ^3, ^5, ^7 = 2 + 8 + 32 + 128
+2+8+32+128 = 170
+'''
 
 "Question 2"
-#Conver the decimals numbers 457 and 988 to the binary. You are supposed to use the algorithm for converting decimal to binary.
-
+#Convert the decimals numbers 457 and 988 to the binary. You are supposed to use the algorithm for converting decimal to binary.
+'''
+457 => 100101110
+457/2 = 228 + 1
+228/2 = 114 + 0
+114/2 = 57 + 0
+57/2 = 28 + 1
+28/2 = 14 + 0
+14/2 = 7 + 1
+7/2 = 3 + 1
+3/2 = 1 + 1
+1/2 = 0
+'''
+'''
+988 => 1111011100
+988/2 = 494 + 0
+494/2 = 247 + 0
+247/2 = 123 + 1
+123/2 = 61 + 1
+61/2 = 30 + 1
+30/2 = 15 + 0
+15/2 = 7 + 1
+7/2 = 3 + 1
+3/2 = 1 + 1
+1/2 = 0 + 1
+'''
 
 "Question 3"
 #Consider that we only have 1 byte to remember data (1 byte is 8 bits).
 #How many numbers can be represented?
+"With only 1 byte, you can represent 256 numbers because it is (2^8)"
 #How many numbers can be represented if we have N bytes rather than 1 byte?
+"With any amount of bytes it is just (2^n). i.e. 2 bytes can represent (2^16) = 65,536 different values. 3 bytes would just be (2^24) amount of values."
 
 "Question 4"
 #Use the ASCII encoding table to represent the following characters or strings in binary.
@@ -44,6 +78,7 @@ print(IDE);
 #Write a python program that creates a car in the terminal.
 
 print("   ___\n _|   |_ \n|       |\n|_______|\n  O   O")
+
 #The line above is a print function with \n to create the shape of a car. 
 
 "Question 6"
