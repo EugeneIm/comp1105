@@ -88,7 +88,7 @@ print(3, 2+5, 2>5, "Test!", "!", sep=' ', end='>>')
 #as long as the "2+5" and "2>5" are separated by commas, the interpreter will consider them to be statments and give you the answers whether it is false, like the "2>5", and "7" from the "2+5". 
 #   3@7@False@Test!@!>> is the result of the print statement above. 
 
-#if I were to sep="@" to sep=" ", the print would show as
+#if I were to change sep="@" to sep=" ", the print would show as
 #   3 7 False Test! !>>
 
 #take away only the "end='>>'"
