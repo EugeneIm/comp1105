@@ -59,20 +59,28 @@ print(IDE);
 
 "Question 4"
 #Use the ASCII encoding table to represent the following characters or strings in binary.
-#1. 124 on the ASCII encoding table
+
+#1. 124 
 "Column 9 Row #4, Column 0 Row #5, Column 2 Row #5"
+#49, 50, 52
+#110001, 0110010, 110100
 
 #2. %
 "Column 7 Row #3"
+#37, 100101
 
 #3. D
 "Column 8 Row #7"
+#68, 1000100
 
 #4. a
 "Column 7 Row #9"
+#97, 01100001
 
 #5. Dad
 "'Column 8, Row #7', 'Column 7 Row #9','Column 0 Row #10'"
+#68, 97, 100
+#1000100, 01100001, 01100100
 
 "Question 5"
 #Write a python program that creates a car in the terminal.
