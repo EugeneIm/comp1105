@@ -58,3 +58,58 @@
 
 #Algorithm Workbench
 
+#User enters their height and asigns the value to a variable called "height". 
+'''
+def main():
+    height = input("Please enter your height: ")
+    height = height
+    print("Your height is: " + height + "cm")
+
+main()
+'''
+#User enters a color and asigns the value to a variable called "color"
+'''
+def main():
+    color = input("Please enter your favorite color: ")
+    color = color
+    print("Your favorite color seems to be " + color)
+
+main()
+'''
+#Statements that does the following with variables a, b, c
+    #adds 2 to variable a and the result is variable b
+
+def main():
+   a = int(input("Please enter the value of a: "))
+   a = a
+   b = a + 2
+   print("the end value of b is: " + str(b))
+
+main()
+
+#multiplies b by 4 and assigns the result to a
+def main():
+    b = int(input("Please enter the value of b: "))
+    b = b
+    a = b * 4
+    print("the end value of a is: " + str(a))
+
+main()
+
+#Divides a by 3.14 and assigns the result to b
+def main():
+    a = float(input("Please enter the value of a: "))
+    a = a
+    b = a / 3.14
+    print("the end value of a is: " + str(b))
+
+main()
+
+#Subtracts 8 from b and assigns the result to a
+def main():
+    b = int(input("Please enter the value of b: "))
+    b = b
+    a = b - 8
+    print("The end value of a is: " + str(a))
+
+main()
