@@ -1,0 +1,1 @@
+print('this is the week 2 notes/questions/answers')
