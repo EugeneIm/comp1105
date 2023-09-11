@@ -1,4 +1,3 @@
-import turtle
 #True or false
 '''
 1. False: 
@@ -219,9 +218,7 @@ print('George', 'John', 'Paul', 'Ringo', sep='@')
 
 #13
 #Write a turtle graphics that draws a circle with a radius of 75 px. 
-t = turtle.Turtle()
-r = 75
-t.circle(r)
+
 
 #14
 #Turtle graphics to write a square that is 100px wide on all sides and filled with the color blue.
