@@ -36,5 +36,25 @@ def main():
 
 main()
 
-#Question 6
+#Question A.
+
+'''
+• Monthly interest rate can be calculated via annual interest divided by 12. 
+• You must write main function and call it in your program
+• Use format function to output only 2 digits after decimal point 
+• Use comments in your program
+• Follow the conventions to name your variables and constants
+• The output should look like below, given the following inputs:
+'''
+def main():
+    initial_sum = input("what is the iniial sum: ")
+    initial_sum = int(initial_sum)
+    monthlyInterestRate = input("annual interest rate: ")
+    monthlyInterestRate = float((monthlyInterestRate))
+    num_years = input("Input the number of years: ")
+    num_years = int(num_years)
+    future_capital = (float(initial_sum * monthlyInterestRate) * int(num_years))
+    future_capital = float(future_capital)
+    print("Future capital is " + str(future_capital))
+main()
 
