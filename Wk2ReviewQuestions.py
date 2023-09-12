@@ -23,7 +23,7 @@
 #Short Answers
 '''
 1. What does a professional programmer do first to gain an understanding of a problem? 
-    - When you read the problem, usually at higher levels where you work with multiple variable in multiple sections, the compiler SHOULD tell you where the error is and what the general problem is. 
+    - When you read the problem, usually at higher levels where you work with multiple variables in multiple sections, the compiler SHOULD tell you where the error is and what the general problem is. 
     - For example, the previous error, "efficiency is not defined", the compiler tells you that efficiency doesn't have anything assigned to it. 
 
 2. What is pseudcode?
