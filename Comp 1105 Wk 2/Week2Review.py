@@ -53,8 +53,24 @@ def main():
     monthlyInterestRate = float((monthlyInterestRate))
     num_years = input("Input the number of years: ")
     num_years = int(num_years)
-    future_capital = (float(initial_sum * monthlyInterestRate) * int(num_years))
+    future_capital = (float(initial_sum // monthlyInterestRate) * int(num_years) + initial_sum)
     future_capital = float(future_capital)
     print("Future capital is " + str(future_capital))
 main()
 
+#The correct answer is below
+'''
+def main():
+ # getting input data
+ intialSome = float(input("Enter the initial some: "))
+ yIntRate = float(input("Enter annual interest rate: "))
+ years = int(input(("Enter number of years: "))
+ 
+ # calculate the capital 
+ mIntRate = yIntRate / 12 / 100
+ capital = initialSome * (1+ mIntRate) ** (years * 12) 
+ # print out the results
+ print("Future capital is", format(capital, "10.2f"))
+main()
+
+'''
