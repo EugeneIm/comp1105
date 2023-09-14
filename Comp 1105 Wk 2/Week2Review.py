@@ -36,6 +36,16 @@ def main():
 
 main()
 
+#This is supposed to be the answer but it's boring
+'''
+def main():
+    print("   ___\n _|   |_ \n|       |\n|_______|\n  O   O")
+    length = float(input("Km driven? "))
+    litres = float(input("litres used? "))
+    efficiency = length/litres
+    print("your car has an efficiency of ", efficiency, " km/L")
+main()
+'''
 #Question A.
 
 '''
