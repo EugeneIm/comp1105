@@ -74,3 +74,13 @@ def main():
 main()
 
 '''
+
+x = input("Enter a number")
+x = float(x)
+y = input("Enter another number")
+y = int(y)
+
+print(format(x, '10.2f'))
+print(format(y, '20'))
+print(format(x + y, '20.2f'))
+
