@@ -5,11 +5,12 @@ y = float(input("What is the second score? "))
 z = float(input("What is the third score? "))
 
 
-avg = ((x+y+z)/3)
+avg = format(((x+y+z)/3), ".2f")
 
-print("The average score is ", avg)
+print("The average score is ", str(avg))
 
-if avg >= 95:
-	print("The average score is ", avg, " congratulations")
+if float(avg) >= 95:
+	print("The average score is ", float(avg), " congratulations")
 else:
 	print("You might need to study more")
+
