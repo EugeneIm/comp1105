@@ -20,12 +20,16 @@ both statements are correct, HOWEVER, statement A is less efficient
 '''
 
 #Q2
-'''
-Boolean expression using logical operators to express the following conditions:
 
-Condition  = |x - 5| < 4.5           |x - 5| > 4.5
-Expression = x < 9.5 and x > 0.5     x > 9.5 or x < 0.5 
 '''
+|x - 5| < 4.5
+x < 9.5 or x > 0.5
+
+|x - 5| > 4.5
+x > 9.5 or x < 0.5 
+'''
+
+    
 
 #Q3
 '''
@@ -64,38 +68,38 @@ x = 2 and y = 2
 output: ____
 '''
 
+'''
+rock 0 > scissors 1
+rock 0 < paper 2
+scissors 1 > paper 2
+'''
+
 def main():
- ROCK = 0
- SCiSSORS = 1
- PAPER = 2
- p1 = int(input("@Player1 - Select rock(0), scissors (1), or paper(2): "))
- p2 = int(input("@Player2 - Select rock(0), scissors (1), or paper(2): "))
- if p1 < 0 or p1 > 2 or p2 < 0 or p2 > 2 :
-     print("DATA ERROR: enter 0, 1 0r 2 as inputs!")
- else: # p1 and p2 are valid numbers
-    if p2 == ROCK :
-        if p1 == ROCK:
-            print("Player2 is rock. Pleyer1 is rock. It is draw.")
-    elif p1 == SCiSSORS:
-        print("Player2 is rock. Pleyer1 is scissors. Player2 won!")
-    else : #p1 is paper
-        print("Player2 is rock. Pleyer1 is paper. Player1 won!")
-    if p2 == PAPER :
-        if p1 == ROCK:
-            print("Player2 is paper. Pleyer1 is rock. Player2 won!")
-        elif p1 == SCiSSORS:
-            print("Player2 is paper. Pleyer1 is scissors. Player1 won!")
-    else : #p1 is paper
-        print("Player2 is paper. Pleyer1 is paper. It is draw.")
-    if p1 == ROCK:
-        print("Player2 is scissors. Pleyer1 is rock. Player1 won!")
-    elif p1 == SCiSSORS:
-        print("Player2 is scissors. Pleyer1 is scissors. It is draw.")
-    else : #p1 is paper
-        print("Player2 is scissors. Pleyer1 is paper. Player2 won!")
-#calling main function
+    ROCK = 0
+    SCISSORS = 1
+    PAPER = 2
+    Player1 = int(input("@Player1 - Select rock(0), scissors (1), or paper(2): "))
+    Player2 = int(input("@Player2 - Select rock(0), scissors (1), or paper(2): "))
+
+    if Player1 == 0 and Player2 == 0:
+        print("it's a tie")
+    elif Player1 == 1 and Player2 == 1:
+        print("it's a tie")
+    elif Player1 == 2 and Player2 == 2:
+        print("it's a tie")
+    elif Player1 == 0 and Player2 == 1:
+        print("Player 1 wins")
+    elif Player1 == 1 and Player2 == 2:
+        print("Player 1 wins")
+    elif Player1 == 2 and Player2 == 0:
+        print("Player 1 wins")
+    elif Player1 == 0 and Player2 == 2:
+        print("Player 2 wins")
+    elif Player1 == 1 and Player2 == 0:
+        print("Player 2 wins")
+    elif Player1 == 2 and Player2 == 1:
+        print("Player 2 wins")
+    
 main()
 
-#Very inefficient
-
-#More efficient RPS on Wk4.py
+#RPS
