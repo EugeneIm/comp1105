@@ -2,7 +2,7 @@
 #years_on_the_job = int(input("How long have you been working at this company? "))
 
 #nested if statements for a qualification of a loan
-
+'''
 def main():
 	salary = int(input("What is your current salary? "))
 	years_on_the_job = int(input("How long have you worked here? "))
@@ -13,4 +13,15 @@ def main():
 	if (salary > 30000) and (years_on_the_job > 2):
 		print("You qualify for the loan")
 main()
+'''
 
+#Palindrome checker
+
+number = int(input("Enter 3 digits "))
+if number < 100 or number > 999 :
+	print("ERROR : Invalid number!")
+else:
+	if number%10 == number//100:
+		print(number, " is a palindrome")
+	else:
+		print(number, " is NOT a palindrome")
