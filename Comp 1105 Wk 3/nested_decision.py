@@ -16,12 +16,15 @@ main()
 '''
 
 #Palindrome checker
+def palindrome():
 
-number = int(input("Enter 3 digits "))
-if number < 100 or number > 999 :
-	print("ERROR : Invalid number!")
-else:
-	if number%10 == number//100:
-		print(number, " is a palindrome")
+	num = int(input("Give me 3 digits "))
+	if num < 100 or num > 999:
+		print("number cannot be below 100 or above 999")
 	else:
-		print(number, " is NOT a palindrome")
+		if num % 10 == num // 100:
+			print(num, " is a palindrome")
+		else:
+			print(num, " is not a palindrome")
+
+palindrome()
