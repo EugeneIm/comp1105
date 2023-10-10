@@ -13,9 +13,9 @@ def main():
 
 
 def getData():
-    r = int(input("What is the radius of the circle? "))
+    rad = int(input("What is the radius of the circle? "))
 
-    if r <= 0:
+    if rad <= 0:
         print("Radius cannot be 0 or less")
 
 getData()
@@ -26,9 +26,11 @@ def getArea(r):
 
     if r <= 0:
         print("radius of a cicle cannot be 0 ")
-
+    else:
+        area = PI * (r**2)
+        
     
-
+#if there is no radius given, the default radius will be set at a value of 1
 getArea(r)
 
 main()
