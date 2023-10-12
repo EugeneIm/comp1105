@@ -8,5 +8,5 @@ def sumNum(input):
         input //= 10
 
     print(sum)
-answer = sumNum(312)
+answer = sumNum(112)
 print(answer)

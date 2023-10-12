@@ -9,8 +9,10 @@ year = 0
 while BALANCE < TARGET:
     year = year + 1
     INTEREST = BALANCE * RATE
-    NEW_BALANCE = BALANCE + INTEREST
-    if NEW_BALANCE < TARGET:
+    BALANCE = BALANCE + INTEREST
+    if BALANCE < TARGET:
         print('not there yet')
+        print("it is the year:", year)
+        print(format(BALANCE, ".2f"))
     else:
-        print('youve reached the target')
+        print('youve reached the target balance')
