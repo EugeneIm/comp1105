@@ -13,7 +13,7 @@ def main():
     #calling the function without any parameter. 
     #We ser the "radius = 1" so that if no parameters are given, the default radius is 1
     a = getArea()
-    print("Rad is 1, Area is ", format(a, ".2f"))
+    print("Rad is 1 (default radius), Area is ", format(a, ".2f"))
 
 def getData():
     #This is giving the "r" the value in the main function
@@ -27,7 +27,7 @@ def getData():
 
 def getArea(radius = 1):
     #area is just the equation to get the area of the circle
-    area = (radius**2 * PI)
+    area = (PI * (radius**2))
     return area
 
 main()
