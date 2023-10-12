@@ -12,7 +12,7 @@ while BALANCE < TARGET:
     BALANCE = BALANCE + INTEREST
     if BALANCE < TARGET:
         print('not there yet')
-        print("it is the year:", year)
+        print("it is", year, " year(s) into interest growth")
         print(format(BALANCE, ".2f"))
     else:
         print('youve reached the target balance')
