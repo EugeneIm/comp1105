@@ -1,36 +1,33 @@
 PI = 3.14
 
 def main():
-    #getData gets data from the user, aka input a number or value
     r = getData()
-    #getArea takes the radius of the circle as a parameter and calculates the area of the circle. 
+    #this is calling the function with the value that you gave to r
     a = getArea(r)
-    
-    print("Radius is %d, Area is, ", format(a, "0.2f"))
+    print("Rad is %d, Area is %.2f" % (r, a))
 
+    #this calls the function with the parameter that the radius of the circle is 10
+    a = getArea(10)
+    print("Rad is 10, Area is ", format(a, ".2f"))
+
+    #calling the function without any parameter. 
+    #We ser the "radius = 1" so that if no parameters are given, the default radius is 1
     a = getArea()
-    print("Radius is 1, Area is ", format(a, ".2f"))
-
+    print("Rad is 1, Area is ", format(a, ".2f"))
 
 def getData():
+    #This is giving the "r" the value in the main function
     rad = int(input("What is the radius of the circle? "))
-
     if rad <= 0:
-        print("Radius cannot be 0 or less")
-
-getData()
-
-def getArea(r):
-#calculation to get the area of a circle:
-    #area = PI * radius^2
-
-    if r <= 0:
-        print("radius of a cicle cannot be 0 ")
+        #radius can't be less than or equal to zero
+        rad = int(input("The radius cannot be 0 or lower"))
     else:
-        area = PI * (r**2)
-        
-    
-#if there is no radius given, the default radius will be set at a value of 1
-getArea(r)
+        #returns the value so that r is given an actual value
+        return rad
+
+def getArea(radius = 1):
+    #area is just the equation to get the area of the circle
+    area = (radius**2 * PI)
+    return area
 
 main()

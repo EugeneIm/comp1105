@@ -14,5 +14,5 @@ def sumNums(num):
         
         num //= 10
 
-    print("value of even numbers is", evenSum, "\n", "value of odd numbers is",  oddSum)
-sumNums(2121212)
+    print(" value of even numbers is", evenSum, "\n", "value of odd numbers is",  oddSum)
+sumNums(9)
