@@ -30,11 +30,15 @@ def main():
     x = 1 
     y = 3.14
     print(x, y)
+    #gives 1 3.14
     change_us(x, y)
+    #gives 0 0 because change_us is using a, b and not x, y
     print(x, y)
+    #1 3.14
 def change_us(a, b):
     a = 0
     b = 0
     print(a, b)
-
+    #1 3.14
+    #change_us(x, y) changes the values of a and b to 1 and 3.14
 main()
