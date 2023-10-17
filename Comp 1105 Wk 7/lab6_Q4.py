@@ -24,17 +24,17 @@ def verify_card(card_num):
         return False
 
     def first_num(card_num):
-        if card_num[0] == 4 or card_num[-1] == 5 or card_num[-1] == 6 or (card_num[-1] == 3 and card_num[0] == 7):
+        if card_num[0] == 4 or card_num[0] == 5 or card_num[0] == 6 or (card_num[0] == 3 and card_num[1] == 7):
             return True
         return False
     
-    def odd_places():
+    def odd_places(card_num):
         odd_sum = 0
         for o in range(len(card_num) -1, -1, -2):
             odd_sum += card_num[o]
         return odd_sum
         
-    def double_digits():
+    def double_digits(card_num):
         double_sum = 0
         len = len(card_num)
         for d in range(len - 2, -1, -2):
