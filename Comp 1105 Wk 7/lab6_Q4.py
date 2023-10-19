@@ -12,35 +12,34 @@ starts with 6 for Discover cards
 # Add the numbers in each odd space
 # Add previous 2 numbers and divide them by 10, if num % 10 == 0, valid, else invalid.
 
-card_num = str(input("input your credit card information: "))
 # num_length = len(card_num)
-
-
-def verify_card(card_num):
+#card_num = str(input("input your credit card information: "))
+def verify_card():
+    #card_num = str(input("input your credit card information: "))
     def valid_card(card_num):
         return card_len(card_num) and first_num(card_num) and card_num_total(card_num)
 
     def card_len(card_num):
-        if len(card_num) <= 13 or len(card_num) >= 16:
+        if len(card_num) >= 13 or len(card_num) <= 16:
             return True
         return False
 
     def first_num(card_num):
-        if card_num[0] == 4 or card_num[0] == 5 or card_num[0] == 6 or (card_num[0:1] == 37):
+        if card_num[0] == '4' or card_num[0] == '5' or card_num[0] == '6' or (card_num[0:2] == '37'):
             return True
         return False
 
     def odd_places(card_num):
         odd_sum = 0
         for o in range(len(card_num) - 1, -1, -2):
-            odd_sum += card_num[o]
+            odd_sum += int(card_num[o])
         return odd_sum
 
     def double_digits(card_num):
         double_sum = 0
-        len = len(card_num)
-        for d in range(len - 2, -1, -2):
-            num = card_num[d]
+        length = len(card_num)
+        for d in range(length - 2, -1, -2):
+            num = int(card_num[d])
             add = num * 2
             if add < 10:
                 double_sum += add
@@ -55,7 +54,6 @@ def verify_card(card_num):
         # card_len(card_num)
         # first_num(card_num)
     print(valid_card("4388576018402626"))
-    print(valid_card("4388576018410707"))
+    print(valid_card("9388576018402626"))
 
-
-verify_card(int(card_num))
+verify_card()
