@@ -1,0 +1,1 @@
+#Write a modular program that receives data from a file called 'data.txt' and prints out the contents 
