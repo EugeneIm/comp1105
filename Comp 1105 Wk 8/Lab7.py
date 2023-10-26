@@ -87,5 +87,8 @@ def main():
         return
     except ValueError as verr:
         print("MyError : ", verr)
+    except Exception as err:
+        print(err)
+        return
 
 main()
