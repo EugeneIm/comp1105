@@ -3,6 +3,7 @@
 
 # ZeroDivisionError
 # FileNotFoundError
+'''
 try:
     print(5/0)
 except ZeroDivisionError:
@@ -23,8 +24,10 @@ while True:
         print("Cannot divide by 0")
     else:
         print(answer)
+'''
 
 #Reading the file
+
 try:
     file_read = open("data.txt", "r")
     #r is read, w is write, a is append
@@ -38,6 +41,7 @@ except FileNotFoundError:
     print("File is not found")
 
 #While loop to read a file
+'''
 try:
     file_content = open('data.txt', 'r')
     while True:
@@ -47,13 +51,14 @@ try:
     file_content.close()
 except FileNotFoundError:
     print("File not found")
-
+'''
 #Writing to a file
 try:
     content = open('out.txt', 'w')
-    file_content = ("This writes to a file")
-    info = content.write(file_content)
-    print(info)
+    user_input = str(input("Write what you want to put into out.txt: "))
+    #file_content = ("This writes to a file")
+    info = content.write(user_input)
+    #print(info)
     content.close()
 except FileNotFoundError:
     print("file not found")
