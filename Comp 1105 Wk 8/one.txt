@@ -1,9 +1,1 @@
-hello
-13
-hello
-hello
-THIS
-This
-12
-13
-912
+hello, HELLO, heLLo, this, THiS
