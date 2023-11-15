@@ -1,6 +1,5 @@
 #Review Q1
 #Write a program that returns a person's initials, i.e. John Willian Smith -> J W S
-
 #Q1
 def get_initials():
     #user inputs their name
@@ -21,6 +20,7 @@ def getInitials(name):
     return initials
     
 get_initials()
+
 
 
 #Encrypt a dictionary to a file
@@ -60,6 +60,25 @@ def encrypt(d, text):
 
 main()
 
+
 #Q2 Date printer
 
 #Input = 03/12/2023, Output is March 12, 2023
+
+def dateChange():
+    #Get the input from the user
+    formatOne = input('Enter the date in the format: XX/XX/XXXX please: ')
+    d = {1:'Jan', 2:'Feb', 3:'March'}
+    result = convertDate(formatOne, d)
+    if result != None:
+        print(result)
+
+def convertDate(date, d):
+    try:
+        ls = date.split('/')
+        result = d[int(ls[0])] + ' ' + str(int(ls[1])) + ', ' + str(int(ls[2]))
+        return result
+    except ValueError as err:
+        print('Error: ' , err)
+        return None
+dateChange()
