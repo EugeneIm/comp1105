@@ -82,3 +82,57 @@ def convertDate(date, d):
         print('Error: ' , err)
         return None
 dateChange()
+
+
+def charAnalysis():
+
+    uppers = getUppers()
+    lowers = getLowers()
+    digits = getDigits()
+    spaces = getSpaces()
+
+#Number of uppercase letters in a file
+#Number of lowercase letters in a file
+#Number of digits (non-alphabetical) in a file
+#Number of whitespace (spaces) in a file. 
+
+    def getUppers():
+        file = file.open('test.txt', 'r')
+        content = file.read()
+        file.close()
+        count = 0
+        for c in content:
+            if c.upper() == True:
+                count += 1
+            return count
+
+def getLowers():
+    file = file.open('test.txt', 'r')
+    content = file.read()
+    file.close()
+    count = 0
+    for c in content:
+        if c.lower() == True:
+            count += 1
+        return count
+    
+def getDigits():
+    file = file.open('test.txt', 'r')
+    content = file.read()
+    file.close()
+    count = 0
+    for c in content: 
+        if c.isdigit() == True:
+            count += 1
+        return count
+    
+def getSpaces():
+    file = file.open('test.txt', 'r')
+    content = file.read()
+    file.close()
+    count = 0
+    for c in content:
+        if c == " ":
+            count += 1
+        return count
+charAnalysis()
