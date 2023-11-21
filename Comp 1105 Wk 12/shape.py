@@ -31,5 +31,7 @@ class Square:
         return side
     
     def Area(self):
-        area = (self.side^2)
+        area = (self.side * self.side)
         return area
+    
+    

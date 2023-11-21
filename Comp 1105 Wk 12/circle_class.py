@@ -18,11 +18,11 @@ main()
 
 def square():
     s1 = shape.Square()
-    print(s1.cord_x, s1.cord_y, s1.getSide())
+    print(s1.cord_x, s1.cord_y, s1.getSide(), s1.Area())
 
-    s2 = shape.Square(8, 2, 4.0)
-    print(s2.cord_x, s2.cord_y, s2.getSide())
+    s2 = shape.Square(8, 2, 10.0)
+    print(s2.cord_x, s2.cord_y, s2.getSide(), s2.Area())
 
     s3 = shape.Square(1, 1)
-    print(s3.cord_x, s3.cord_y, s3.getSide())
+    print(s3.cord_x, s3.cord_y, s3.getSide(), s3.Area())
 square()
