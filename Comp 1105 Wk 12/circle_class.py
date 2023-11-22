@@ -1,5 +1,6 @@
 import shape
 
+'''
 def main():
     c1 = shape.Circle()
         #the statement above uses default values
@@ -13,16 +14,16 @@ def main():
         #uses the value of 10 for radius but uses default value of "white" for color. 
     print(c3.rad, c3.color, c3.getArea())
 main()
-
+'''
 
 
 def square():
     s1 = shape.Square()
-    print(s1.cord_x, s1.cord_y, s1.getSide(), s1.Area())
+    print(s1.__cord_x, s1.__cord_y, s1.getSide(), s1.Area())
 
     s2 = shape.Square(8, 2, 10.0)
-    print(s2.cord_x, s2.cord_y, s2.getSide(), s2.Area())
+    print(s2.__cord_x, s2.__cord_y, s2.getSide(), s2.Area())
 
     s3 = shape.Square(1, 1)
-    print(s3.cord_x, s3.cord_y, s3.getSide(), s3.Area())
+    print(s3.__cord_x, s3.__cord_y, s3.getSide(), s3.Area())
 square()

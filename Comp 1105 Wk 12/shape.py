@@ -15,22 +15,22 @@ class Circle:
 class Square:
 
     def __init__(self, cord_x = 0, cord_y = 0, side = 1.0):
-        self.cord_x = cord_x
-        self.cord_y = cord_y
-        self.side = side
+        self.__cord_x = cord_x
+        self.__cord_y = cord_y
+        self.__side = side
 
     def valueX(self):
-        locationX = self.cord_x
+        locationX = self.__cord_x
         return locationX
     
     def valueY(self):
-        locationY = self.cord_y
+        locationY = self.__cord_y
         return locationY
     
     def getSide(self):
-        side = self.side
+        side = self.__side
         return side
     
     def Area(self):
-        area = (self.side * self.side)
+        area = (self.__side * self.__side)
         return area
