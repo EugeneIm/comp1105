@@ -3,15 +3,15 @@ import shape
 def main():
     c1 = shape.Circle()
         #the statement above uses default values
-    print(c1.radius, c1.color, c1.getArea())
+    print(c1.rad, c1.color, c1.getArea())
 
-    c2 = shape.Circle(10, 'blue')
+    c2 = shape.Circle(-10, 'blue')
         #The statement above passes the values of 10 and blue to be 'rad', and 'color'
-    print(c2.radius, c2.color, c2.getArea())
+    print(c2.rad, c2.color, c2.getArea())
     
     c3 = shape.Circle(10)
         #uses the value of 10 for radius but uses default value of "white" for color. 
-    print(c3.radius, c3.color, c3.getArea())
+    print(c3.rad, c3.color, c3.getArea())
 main()
 
 

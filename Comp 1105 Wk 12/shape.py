@@ -3,11 +3,12 @@ class Circle:
     #What if the class was a dog?
         #def __init__(self, breed, age, weight)
     def __init__(self, rad = 1, color = 'purple'):
-        self.color = color
-        self.radius = rad
+            self.color = color
+            self.rad = rad
+
 
     def getArea(self):
-        area = ((self.radius^2) * 3.14)
+        area = ((self.rad^2) * 3.14)
         return area
     
 
@@ -33,5 +34,3 @@ class Square:
     def Area(self):
         area = (self.side * self.side)
         return area
-    
-    
