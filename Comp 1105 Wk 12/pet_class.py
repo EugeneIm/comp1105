@@ -1,8 +1,8 @@
 class Pet:
-    def __init__(self, name, animal_type, age = 0):
-        self.__name = name
-        self.__animal_type = animal_type
-        self.__age = age
+    def __init__(self):
+        self.__name = "Noname"
+        self.__animal_type = ""
+        self.__age = 0
 
     def setName(self, newName):
         self.__name = newName
@@ -28,13 +28,13 @@ class Pet:
 
 def main():
 
-    pet_one = Pet("Sesame", "Dog", 1)
-    pet_one.setAge(5)
-    print(pet_one.getAge())
-    pet_one.setName("marble")
-    print(pet_one.getName())
-    pet_one.setType('cat')
-    print(pet_one.getType())
+    pet_one = Pet()
+    x = input()
+    y = int(input)
+    z = input()
+    pet_one.setName(x)
+    pet_one.setAge(y)
+    pet_one.setType(z)
 
 
 main()
