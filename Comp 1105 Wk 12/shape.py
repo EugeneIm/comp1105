@@ -34,3 +34,9 @@ class Square:
     def Area(self):
         area = (self.__side * self.__side)
         return area
+    
+    def translateXY(self, cord_x, cord_y):
+        self.__cord_x += cord_x
+        self.__cord_y += cord_y
+    
+    
