@@ -23,6 +23,7 @@ class myGui():
         self.clear_button = Button(self.left_bot, text = 'Clear', command=self.clear)
         self.quit_button = Button(self.left_bot, text = 'Quit', command=self.main_window.destroy)
         
+        
         #right frame
         self.right_frame = Frame(self.main_window)
         self.header = Label(self.right_frame, text = 'Results')
@@ -31,6 +32,7 @@ class myGui():
         self.result_var2 = StringVar()
         self.search_res2 = Label(self.right_frame, width=45, textvariable=self.result_var2)
         
+
         #pack frames
         self.left_frame.pack(side = 'left')
         self.left_top.pack()
@@ -116,24 +118,3 @@ class myGui():
         #end function
 
 new_gui = myGui('textfile.txt')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

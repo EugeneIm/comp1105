@@ -49,12 +49,6 @@ class GUI():
         tkinter.mainloop()
 
 
-def search():
-    pass
-
-def clear():
-    pass
-
 
 
 gui = GUI()
